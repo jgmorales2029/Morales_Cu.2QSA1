@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> palaONE</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAFEFF;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d3856;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    color:#4ac7f2;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.main-nav ul li a:hover {
+    background-color: #4ac7f2;
+    color: #0d3856;
+}
+
+.main-nav ul li a.active {
+    background-color: #4ac7f2;
+    color: #0d3856;
+    font-weight: 600;
+}
+
+.authors-section {
+    padding: 60px 20px;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+.authors-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0d3856;
+    margin-bottom: 40px;
+}
+
+.authors-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.author-card {
+    background: #ffffff;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.author-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.author-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #4ac7f2;
+}
+
+.author-name {
+    font-size: 20px;
+    color: #0d3856;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.author-desc {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+</style>
+</head>
+<body>
+<header class="main-header">
+    <div class="logo">PalaONE !</div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="facts.html">FACTS</a></li>
+            <li><a href="food.html">FOOD</a></li>
+            <li><a href="authors.html" class="active">AUTHORS</a></li>
+            <li><a href="spots.html">SPOTS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="authors-section">
+    <h1 class="authors-title">About the Authors</h1>
+
+    <div class="authors-container">
+
+        <div class="author-card">
+            <img src=" 11e953c6-2fe6-4966-a078-0da675e6ddaf.jpg" alt= "mia" class="author-img">
+            <h2 class="author-name">Mia Ysabel Cu</h2>
+            <p class="author-desc">
+                Samat's fave movies enjoyer !
+            </p>
+        </div>
+
+        <div class="author-card">
+            <img src="b9af97a6-6227-40f0-93d1-8e3b9d58b2b0.jpg " alt= "jewel" class="author-img">
+            <h2 class="author-name">Jewel Erica Morales</h2>
+            <p class="author-desc">
+                A hardworking PSHS scholar who has hardcore abs.
+            </p>
+        </div>
+
+    </div>
+</section>

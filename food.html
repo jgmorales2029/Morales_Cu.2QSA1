@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> palaONE</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d3856;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4ac7f2;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    background-color: #4ac7f2;
+    color: #0d3856;
+    transform: scale(1.05);
+}
+.main-nav ul li a.active {
+    padding: 4px 10px;
+    background-color: #4ac7f2;
+    color: #0d3856;
+    font-weight: 600;
+}
+
+
+
+
+.hero-banner {
+    background: url('https://mlafqlkvsrtu.i.optimole.com/cb:hy5C.6711a/w:1440/h:1080/q:mauto/f:best/https://islandhoppinginthephilippines.com/palawan/wp-content/uploads/2022/11/palawan-world-best-island.webp') no-repeat center center/cover;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,50,80,0.4));
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.info-cards-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.info-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    font-size: 20px;
+    color: #0d3856;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.btn-secondary {
+    background-color: #0d3856;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #4ac7f2;
+    color: #0d3856;
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .main-nav ul li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+
+
+    .btn-primary {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+<header class="main-header">
+    <div class="logo">PalaONE !</div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="facts.html">FACTS</a></li>
+            
+           <li><a href="food.html" class="active">FOOD</a></li>
+
+          <li><a href="authors.html">AUTHORS</a></li>
+            <li><a href="spots.html"> SPOTS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero-banner">
+    <div class="hero-content">
+
+    </div>
+</section>
+
+<section class="info-cards-section">
+    <div class="card-container">
+
+        <div class="info-card">
+            <img src="https://images.contentstack.io/v3/assets/blt1306150c2c4003bc/blt89dea13ad6503092/648692338b23a52d090527c3/00-tamilok-a-wormy-delicacy-beloved-in-palawan-ig-paulmartindavid-cropped.jpg" alt="Tamilok" class="card-image">
+            <div class="card-body">
+                <h3>Tamilok</h3>
+                <p>Tamilok is created from a shipworm, one of several species found throughout the planet.  They resemble worms, and, as the name says, they can be found on ships, where the "worms" not only live on, but also eat the wood—literally, termites of the seas.</p>
+
+                <a href="#" class="btn-secondary">MORE</a>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <img src="https://philippinesislandhopping.com/wp-content/uploads/2023/12/kinilaw.jpg" alt="Coron" class="card-image">
+            <div class="card-body">
+                <h3>Kinilaw</h3>
+                <p>Kinilaw is a Filipino ceviche, made of raw fish or seafood marinated in vinegar, citrus juice, and seasonings. In Palawan, it often features local fish like tanigue or tuna, along with coconut milk, ginger, onions, and chili.</p>
+                <a href="#" class="btn-secondary">MORE</a>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <img src="https://www.kkday.com/en-sg/blog/wp-content/uploads/philippines_palawan_birdsnest_illustrative.jpg" alt="Nido Soup" class="card-image">
+            <div class="card-body">
+                <h3>Nido Soup</h3>
+                <p>Palawan is renowned for its edible bird's nest, essential for the traditional Nido Soup. Valued for its delicate texture and nutritional benefits, Nido Soup is often enjoyed on special occasions, reflecting the region's culinary richness.<p>
+                <a href="#" class="btn-secondary">MORE</a>
+            </div>
+        </div>
+
+    </div>
+</section>

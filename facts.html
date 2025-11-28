@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> palaONE</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d3856;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4ac7f2;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    background-color: #4ac7f2;
+    color: #0d3856;
+    transform: scale(1.05);
+}
+.main-nav ul li a.active {
+    padding: 4px 10px;
+    background-color: #4ac7f2;
+    color: #0d3856;
+    font-weight: 600;
+}
+
+
+
+
+.hero-banner {
+    background: url('https://mlafqlkvsrtu.i.optimole.com/cb:hy5C.6711a/w:1440/h:1080/q:mauto/f:best/https://islandhoppinginthephilippines.com/palawan/wp-content/uploads/2022/11/palawan-world-best-island.webp') no-repeat center center/cover;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,50,80,0.4));
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.info-cards-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.info-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    font-size: 20px;
+    color: #0d3856;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.btn-secondary {
+    background-color: #0d3856;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #4ac7f2;
+    color: #0d3856;
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .main-nav ul li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+
+    .btn-primary {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    </style>
+    </head>
+    <body>
+    <header class="main-header">
+  <div class="logo">PalaONE !</div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="facts.html" class="active">FACTS</a></li>
+            
+           <li><a href="food.html" >FOOD</a></li>
+
+          <li><a href="authors.html">AUTHORS</a></li>
+            <li><a href="spots.html"> SPOTS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero-banner">
+    <div class="hero-content">
+
+    </div>
+</section>
+
+<section class="info-cards-section">
+    <div class="card-container">
+
+        <div class="info-card">
+            <img src="https://www.travel-palawan.com/wp-content/uploads/2023/04/Nacpan-beach-El-Nido-Palawan-Philippines.jpeg" alt="foods" class="card-image">
+            <div class="card-body">
+                <p>Palawan was mentioned as "Pulaoan" or "Polaoan" by Antonio Pigafetta in 1521 during Magellan's expedition.</p>
+               
+                <a href="#" class="btn-secondary">MORE</a>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <img src="https://www.iwanderlista.com/wp-content/uploads/2020/03/Malcapuya-1024x683.jpg" alt="Coron" class="card-image">
+            <div class="card-body">
+                <p>Palawan is known as the Philippines' Last Frontier and as the Philippines' Best Island.</p>
+                <a href="#" class="btn-secondary">MORE</a>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <img src="https://www.tripsavvy.com/thmb/tskXcKAkEuvTU5YG2YQotW9iSrU=/2400x1599/filters:no_upscale():max_bytes(150000):strip_icc()/island-hopping_elnido-5a6b104f119fa80037173feb.jpg" alt="west" class="card-image">
+            <div class="card-body">
+                <p>In 2005, Palawan was briefly made politically part of Western Visayas or Region VI through Executive Order 429 signed by then-President Gloria Macapagal Arroyo on May 23 as a political move to control the province and a response to getting more loans from China.</p>
+              
+                <a href="#" class="btn-secondary">MORE</a>
+            </div>
+        </div>
+      <div class="info-card">
+            <img src="https://ih1.redbubble.net/image.714649002.9887/flat,800x800,075,f.jpg" alt="coast" class="card-image">
+            <div class="card-body">
+                <p>Palawan's coastlines were settled by later groups that are now collectively known as "Palawenos".</p>
+              
+                <a href="#" class="btn-secondary">MORE</a>
+            </div>
+        </div>
+      <div class="info-card">
+            <img src="https://cdn.pixabay.com/photo/2017/08/12/22/23/dusk-2635564_1280.jpg" alt="borneo" class="card-image">
+            <div class="card-body">
+                <p>Unlike most of the Philippines, Palawan is biogeographically part of Sundaland, with a fauna and florarelated to that found in Borneo.</p>
+              
+                <a href="#" class="btn-secondary">MORE</a>
+            </div>
+        </div>
+      <div class="info-card">
+            <img src="https://www.tripsavvy.com/thmb/g5onirjXoOjijj-bQ8lYHdGPTDc=/2072x1447/filters:fill(auto,1)/GettyImages-541362624-5af20f4643a1030036a0545f.jpg" alt="2021" class="card-image">
+            <div class="card-body">
+                <p>Palawan earned the third spot in the annual Conde Nast Traveler readers' choice awards for top islands to visit in 2021.</p>
+              
+                <a href="#" class="btn-secondary">MORE</a>
+            </div>
+        </div>
+    </div>
+</section>
